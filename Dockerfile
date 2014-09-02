@@ -26,6 +26,3 @@ EXPOSE 15672
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# Set the container entry point to rabbitmq executable
-ENTRYPOINT /usr/sbin/rabbitmq-server
